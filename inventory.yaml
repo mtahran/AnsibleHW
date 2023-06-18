@@ -1,0 +1,13 @@
+---
+all:
+  hosts:
+  children:
+    frontend:
+      hosts:
+        webserver:
+          ansible_host: <your webserver ip address>
+    
+    backend:
+      hosts:
+        database:
+          ansible_host: <your database ip address>
